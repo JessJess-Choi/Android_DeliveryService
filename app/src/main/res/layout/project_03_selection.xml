@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Work Select Button-->
+	<Button
+		android:id = "@+id/selection_Work"
+		android:layout_width = "170dp"
+		android:layout_height = "500dp"
+		android:layout_centerVertical = "true"
+		android:layout_marginLeft = "20dp"
+		android:background = "#AAF"
+		android:gravity = "center_horizontal"
+		android:paddingTop = "60dp"
+		android:stateListAnimator = "@null"
+		android:text = "구직"
+		android:textSize = "70dp" />
+
+	<!--	Work Image-->
+	<ImageView
+		android:layout_width = "170dp"
+		android:layout_height = "170dp"
+		android:layout_alignLeft = "@id/selection_Work"
+		android:layout_alignBottom = "@id/selection_Work"
+		android:layout_marginBottom = "80dp"
+		android:adjustViewBounds = "true"
+		android:background = "@mipmap/icon_work"
+		android:elevation = "2dp" />
+
+	<!--	Employ Select Button-->
+	<Button
+		android:id = "@+id/selection_Employ"
+		android:layout_width = "170dp"
+		android:layout_height = "500dp"
+		android:layout_alignParentRight = "true"
+		android:layout_centerVertical = "true"
+		android:layout_marginRight = "20dp"
+		android:background = "#AAF"
+		android:gravity = "center_horizontal"
+		android:paddingTop = "60dp"
+		android:stateListAnimator = "@null"
+		android:text = "구인"
+		android:textSize = "70dp" />
+
+	<!--	Employ Image-->
+	<ImageView
+		android:layout_width = "170dp"
+		android:layout_height = "170dp"
+		android:layout_alignLeft = "@id/selection_Employ"
+		android:layout_alignBottom = "@id/selection_Employ"
+		android:layout_marginBottom = "80dp"
+		android:adjustViewBounds = "true"
+		android:background = "@mipmap/icon_employ"
+		android:elevation = "2dp" />
+
+</RelativeLayout >

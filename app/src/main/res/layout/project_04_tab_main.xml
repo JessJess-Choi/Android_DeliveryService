@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:id = "@+id/tabmain_relativelayout"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	ViewPager-->
+	<androidx.viewpager.widget.ViewPager
+		android:id = "@+id/tabmain_ViewPager"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent" />
+
+	<!--	TabLayout instead of TabHost-->
+	<com.google.android.material.tabs.TabLayout
+		android:id = "@+id/tabmain_TabLayout"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentBottom = "true"
+		android:background = "#CCC"
+		app:tabMode = "fixed" />
+
+</RelativeLayout >

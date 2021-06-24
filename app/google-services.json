@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "937189512804",
+    "firebase_url": "https://soongsil-7a66a.firebaseio.com",
+    "project_id": "soongsil-7a66a",
+    "storage_bucket": "soongsil-7a66a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937189512804:android:0f401698ef448b7b93f171",
+        "android_client_info": {
+          "package_name": "com.example.projectdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937189512804-62dtaordhdbh8273n65qv460o1q0i1qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF6x3wklP410U43aYRmpnTCZrnlcaYr40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937189512804-62dtaordhdbh8273n65qv460o1q0i1qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

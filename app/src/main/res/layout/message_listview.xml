@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:id="@+id/message_RelativeLayout"
+	android:layout_width = "360dp"
+	android:layout_height = "wrap_content"
+	android:background = "#FFF" >
+
+	<!--	User Image-->
+	<ImageView
+		android:id = "@+id/message_Image_User"
+		android:layout_width = "40dp"
+		android:layout_height = "40dp"
+		android:layout_centerVertical = "true"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_marginBottom = "10dp"
+		android:adjustViewBounds="true"
+		android:background = "@mipmap/icon_custom_male" />
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/message_Text"
+		android:layout_width = "290dp"
+		android:layout_height = "wrap_content"
+		android:layout_centerVertical = "true"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_marginBottom = "10dp"
+		android:gravity = "center_vertical"
+		android:textSize = "18dp" />
+
+	<!--	Subject-->
+	<ImageView
+		android:id = "@+id/message_Image_Photo"
+		android:layout_width = "200dp"
+		android:layout_height = "wrap_content"
+		android:layout_centerVertical = "true"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_marginBottom = "10dp"
+		android:gravity = "center_vertical" />
+
+</RelativeLayout >

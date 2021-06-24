@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/signIn_Subject"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "80dp"
+		android:text = "심부름"
+		android:textSize = "60dp" />
+
+	<!--	ID-->
+	<TextView
+		android:id = "@+id/signIn_ID"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signIn_Subject"
+		android:layout_marginLeft = "20dp"
+		android:layout_marginTop = "100dp"
+		android:gravity = "center_vertical"
+		android:text = "ID"
+		android:textSize = "20dp" />
+
+	<!--	Password-->
+	<TextView
+		android:id = "@+id/signIn_Password"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signIn_ID"
+		android:layout_marginLeft = "20dp"
+		android:layout_marginTop = "15dp"
+		android:gravity = "center_vertical"
+		android:text = "Password"
+		android:textSize = "20dp" />
+
+	<!--	ID Input-->
+	<EditText
+		android:id = "@+id/signIn_Edit_ID"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_alignTop = "@id/signIn_ID"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signIn_ID"
+		android:background = "@drawable/text_rectangle_grey"
+		android:inputType = "textNoSuggestions"
+		android:textSize = "15dp" />
+
+	<!--	PW Input-->
+	<EditText
+		android:id = "@+id/signIn_Edit_Password"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signIn_Edit_ID"
+		android:layout_alignTop = "@id/signIn_Password"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signIn_ID"
+		android:width = "200dp"
+		android:background = "@drawable/text_rectangle_grey"
+		android:inputType = "textPassword"
+		android:textSize = "15dp" />
+
+	<!--	Login Button-->
+	<Button
+		android:id = "@+id/signIn_Button_SignIn"
+		android:layout_width = "70dp"
+		android:layout_height = "75dp"
+		android:layout_alignTop = "@id/signIn_Edit_ID"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signIn_Edit_ID"
+		android:background = "#AAF"
+		android:text = "LogIn"
+		android:textAllCaps = "false" />
+
+	<!--	Sign in Button-->
+	<Button
+		android:id = "@+id/signIn_Button_SignUp"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/signIn_Password"
+		android:layout_alignLeft = "@id/signIn_Password"
+		android:layout_marginTop = "30dp"
+		android:background = "#AAF"
+		android:text = "회원가입" />
+	<!--		android:textColor = "#34F" />-->
+
+	<!--	Wrong Input-->
+	<TextView
+		android:id = "@+id/signIn_WrongInput"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/signIn_Button_SignUp"
+		android:layout_alignLeft = "@id/signIn_Password"
+		android:layout_marginTop = "50dp"
+		android:text = "아이디 혹은 비밀번호가 잘못되었습니다."
+		android:textColor = "#C00"
+		android:textSize = "17dp"
+		android:visibility = "invisible" />
+
+
+</RelativeLayout >

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "360dp"
+	android:layout_height = "120dp"
+	android:background = "#FFF" >
+
+	<!--	Category Image-->
+	<ImageView
+		android:id = "@+id/work_Image"
+		android:layout_width = "80dp"
+		android:layout_height = "80dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp" />
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/work_Subject"
+		android:layout_width = "170dp"
+		android:layout_height = "90dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_toRightOf = "@id/work_Image"
+		android:textSize = "20dp" />
+
+	<!--	Distance-->
+	<TextView
+		android:id = "@+id/work_Distance"
+		android:layout_width = "60dp"
+		android:layout_height = "50dp"
+		android:layout_alignParentRight = "true"
+		android:layout_marginTop = "10dp"
+		android:layout_marginRight = "10dp"
+		android:gravity = "right"
+		android:textSize = "18dp" />
+
+	<!--	Image For Register-->
+	<ImageView
+		android:id = "@+id/work_Register_Image"
+		android:layout_width = "50dp"
+		android:layout_height = "50dp"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentRight = "true"
+		android:layout_marginRight = "10dp"
+		android:visibility = "invisible" />
+
+	<!--	Value-->
+	<TextView
+		android:id = "@+id/work_Value"
+		android:layout_width = "60dp"
+		android:layout_height = "20dp"
+		android:layout_below = "@id/work_Distance"
+		android:layout_alignParentRight = "true"
+		android:layout_marginTop = "10dp"
+		android:layout_marginRight = "10dp"
+		android:gravity = "right"
+		android:textSize = "18dp" />
+
+</RelativeLayout >

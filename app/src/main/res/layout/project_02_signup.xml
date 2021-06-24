@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	ID-->
+	<TextView
+		android:id = "@+id/signUp_ID"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_marginLeft = "50dp"
+		android:layout_marginTop = "200dp"
+		android:gravity = "center_vertical"
+		android:text = "ID"
+		android:textSize = "20dp" />
+
+	<!--	ID Input-->
+	<EditText
+		android:id = "@+id/signUp_Edit_ID"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_alignTop = "@id/signUp_ID"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signUp_ID"
+		android:background = "@drawable/text_rectangle_grey"
+		android:inputType = "textNoSuggestions"
+		android:textSize = "15dp" />
+
+	<!--	PW-->
+	<TextView
+		android:id = "@+id/signUp_PW"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signUp_ID"
+		android:layout_alignLeft = "@id/signUp_ID"
+		android:layout_marginTop = "15dp"
+		android:gravity = "center_vertical"
+		android:text = "Password"
+		android:textSize = "20dp" />
+
+	<!--	PW Input-->
+	<EditText
+		android:id = "@+id/signUp_Edit_PW"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_alignTop = "@id/signUp_PW"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signUp_PW"
+		android:background = "@drawable/text_rectangle_grey"
+		android:inputType = "textPassword"
+		android:textSize = "15dp" />
+
+	<!--	Name-->
+	<TextView
+		android:id = "@+id/signUp_Name"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signUp_PW"
+		android:layout_alignLeft = "@id/signUp_PW"
+		android:layout_marginTop = "15dp"
+		android:gravity = "center_vertical"
+		android:text = "이름"
+		android:textSize = "20dp" />
+
+	<!--	Name Input-->
+	<EditText
+		android:id = "@+id/signUp_Edit_Name"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_alignTop = "@id/signUp_Name"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/signUp_Name"
+		android:background = "@drawable/text_rectangle_grey"
+		android:gravity = "center"
+		android:inputType = "textNoSuggestions"
+		android:textSize = "15dp" />
+
+	<!--	Age-->
+	<TextView
+		android:id = "@+id/signUp_Age"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signUp_Name"
+		android:layout_alignLeft = "@id/signUp_Name"
+		android:layout_marginTop = "15dp"
+		android:gravity = "center_vertical"
+		android:text = "나이"
+		android:textSize = "20dp" />
+
+	<!--	Select Age-->
+	<Button
+		android:id = "@+id/signUp_Button_Age"
+		android:layout_width = "160dp"
+		android:layout_height = "30dp"
+		android:layout_alignLeft = "@id/signUp_Edit_PW"
+		android:layout_alignTop = "@id/signUp_Age"
+		android:background = "@drawable/text_rectangle_grey"
+		android:gravity = "center"
+		android:text = ""
+		android:textSize = "15dp" />
+
+	<!--	Sex-->
+	<TextView
+		android:id = "@+id/signUp_Sex"
+		android:layout_width = "100dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/signUp_Age"
+		android:layout_alignLeft = "@id/signUp_Age"
+		android:layout_marginTop = "15dp"
+		android:gravity = "center_vertical"
+		android:text = "성별"
+		android:textSize = "20dp" />
+
+	<!--	Sex RadioGroup-->
+	<RadioGroup
+		android:id = "@+id/singUp_Group_Radio"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignLeft = "@id/signUp_Button_Age"
+		android:layout_alignTop = "@id/signUp_Sex"
+		android:orientation = "horizontal" >
+
+		<!--		Male Button-->
+		<RadioButton
+			android:id = "@+id/singUp_Button_Radio1"
+			android:layout_width = "60dp"
+			android:layout_height = "30dp"
+			android:gravity = "center"
+			android:text = "남"
+			android:textSize = "20dp" />
+
+		<!--		Female Button-->
+		<RadioButton
+			android:id = "@+id/singUp_Button_Radio2"
+			android:layout_width = "60dp"
+			android:layout_height = "30dp"
+			android:layout_marginLeft = "20dp"
+			android:gravity = "center"
+			android:text = "여"
+			android:textSize = "20dp" />
+
+	</RadioGroup >
+
+	<!--	Sign Up Button-->
+	<Button
+		android:id = "@+id/signUp_Button_SignUp"
+		android:layout_width = "160dp"
+		android:layout_height = "80dp"
+		android:layout_below = "@id/singUp_Group_Radio"
+		android:layout_alignLeft = "@id/signUp_Edit_ID"
+		android:layout_marginTop = "30dp"
+		android:background = "#AAF"
+		android:text = "회원가입"
+		android:textSize = "30dp" />
+
+
+</RelativeLayout >

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "260dp"
+	android:layout_height = "80dp"
+	android:background = "#FFF" >
+
+	<!--	Category Image-->
+	<ImageView
+		android:id = "@+id/user_Image"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp" />
+
+	<!--	Name-->
+	<TextView
+		android:id = "@+id/user_Name"
+		android:layout_width = "100dp"
+		android:layout_height = "60dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_toRightOf = "@id/user_Image"
+		android:textSize = "20dp" />
+
+	<!--	Distance-->
+	<TextView
+		android:id = "@+id/user_Distance"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignParentRight = "true"
+		android:layout_marginTop = "10dp"
+		android:layout_marginRight = "10dp"
+		android:gravity="right"
+		android:textSize = "20dp" />
+
+
+</RelativeLayout >

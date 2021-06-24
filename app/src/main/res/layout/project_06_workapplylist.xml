@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/workapplylist_Subject"
+		android:layout_width = "360dp"
+		android:layout_height = "120dp"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:gravity = "center"
+		android:text = "신청 현황"
+		android:textSize = "60dp" />
+
+	<!--	Option Spinner-->
+	<Spinner
+		android:id = "@+id/workapplylist_Spinner"
+		android:layout_width = "120dp"
+		android:layout_height = "40dp"
+		android:layout_below = "@id/workapplylist_Subject"
+		android:layout_alignRight = "@id/workapplylist_Subject"
+		android:layout_marginTop = "20dp"
+		android:background = "@drawable/text_rectangle_grey"
+		android:entries = "@array/Spinner_Option"
+		android:spinnerMode = "dropdown" />
+
+	<!--	ListView for Work List-->
+	<ListView
+		android:id = "@+id/workapplylist_ListView"
+		android:layout_width = "360dp"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/workapplylist_Spinner"
+		android:layout_centerHorizontal = "true"
+		android:clipToPadding = "false"
+		android:paddingBottom = "48dp" />
+
+</RelativeLayout >

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/userapplylist_Subject"
+		android:layout_width = "360dp"
+		android:layout_height = "120dp"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:gravity = "center"
+		android:paddingLeft = "20dp"
+		android:text = "일 지원자 현황"
+		android:textSize = "40dp" />
+
+	<!--	Register Button-->
+	<Button
+		android:id = "@+id/userapplylist_Back"
+		android:layout_width = "50dp"
+		android:layout_height = "50dp"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_alignTop = "@id/userapplylist_Subject"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "35dp"
+		android:background = "@drawable/ic_custom_back_button" />
+
+	<!--	Category-->
+	<TextView
+		android:id = "@+id/userapplylist_Text_Category"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/userapplylist_Subject"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_marginTop = "20dp"
+		android:gravity = "center"
+		android:text = "일 종류"
+		android:textSize = "18dp" />
+
+	<!--	Name-->
+	<TextView
+		android:id = "@+id/userapplylist_Text_Name"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/userapplylist_Text_Category"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_marginTop = "10dp"
+		android:gravity = "center"
+		android:text = "제목"
+		android:textSize = "18dp" />
+
+	<!--	Value-->
+	<TextView
+		android:id = "@+id/userapplylist_Text_Value"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/userapplylist_Text_Name"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_marginTop = "10dp"
+		android:gravity = "center"
+		android:text = "금액"
+		android:textSize = "18dp" />
+
+	<!--	Content-->
+	<TextView
+		android:id = "@+id/userapplylist_Text_Content"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/userapplylist_Text_Value"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_marginTop = "10dp"
+		android:gravity = "center"
+		android:text = "내용"
+		android:textSize = "18dp" />
+
+	<!--	Apply-->
+	<TextView
+		android:id = "@+id/userapplylist_Text_Apply"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_alignLeft = "@id/userapplylist_Subject"
+		android:layout_alignTop = "@id/userapplylist_Listview"
+		android:gravity = "center"
+		android:text = "지원자"
+		android:textSize = "18dp" />
+
+	<!--	Work Category-->
+	<TextView
+		android:id = "@+id/userapplylist_Work_Category"
+		android:layout_width = "260dp"
+		android:layout_height = "22dp"
+		android:layout_alignTop = "@id/userapplylist_Text_Category"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/userapplylist_Text_Category"
+		android:gravity = "center_vertical"
+		android:textSize = "18dp" />
+
+	<!--	Work Name-->
+	<TextView
+		android:id = "@+id/userapplylist_Work_Name"
+		android:layout_width = "260dp"
+		android:layout_height = "22dp"
+		android:layout_alignTop = "@id/userapplylist_Text_Name"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/userapplylist_Text_Name"
+		android:gravity = "center_vertical"
+		android:textSize = "18dp" />
+
+	<!--	Work Value-->
+	<TextView
+		android:id = "@+id/userapplylist_Work_Value"
+		android:layout_width = "260dp"
+		android:layout_height = "22dp"
+		android:layout_alignTop = "@id/userapplylist_Text_Value"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/userapplylist_Text_Value"
+		android:gravity = "center_vertical"
+		android:textSize = "18dp" />
+
+	<!--	Work Content-->
+	<TextView
+		android:id = "@+id/userapplylist_Work_Content"
+		android:layout_width = "260dp"
+		android:layout_height = "wrap_content"
+		android:layout_alignTop = "@id/userapplylist_Text_Content"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/userapplylist_Text_Content"
+		android:gravity = "center_vertical"
+		android:textSize = "18dp" />
+
+	<!--	Apply User Listview-->
+	<ListView
+		android:id = "@+id/userapplylist_Listview"
+		android:layout_width = "260dp"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/userapplylist_Work_Content"
+		android:layout_marginLeft = "30dp"
+		android:layout_marginTop = "10dp"
+		android:layout_toRightOf = "@id/userapplylist_Text_Apply" />
+
+	<!--	Messenger Button-->
+	<Button
+		android:id = "@+id/userapplylist_Button_Messenger"
+		android:layout_width = "200dp"
+		android:layout_height = "100dp"
+		android:layout_alignParentBottom = "true"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginBottom = "70dp"
+		android:background="@mipmap/icon_messenger"
+		android:enabled = "false"
+		android:elevation="2dp"
+		android:visibility = "invisible" />
+
+</RelativeLayout >

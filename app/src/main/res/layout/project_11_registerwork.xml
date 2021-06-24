@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/registerwork_Subject"
+		android:layout_width = "360dp"
+		android:layout_height = "120dp"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:gravity = "center"
+		android:paddingLeft = "20dp"
+		android:text = "일 등록"
+		android:textSize = "40dp" />
+
+	<!--	Back Button-->
+	<Button
+		android:id = "@+id/registerwork_Button_Back"
+		android:layout_width = "50dp"
+		android:layout_height = "50dp"
+		android:layout_alignLeft = "@id/registerwork_Subject"
+		android:layout_alignTop = "@id/registerwork_Subject"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "35dp"
+		android:background = "@drawable/ic_custom_back_button" />
+
+	<!--	Category-->
+	<TextView
+		android:id = "@+id/registerwork_Text_Category"
+		android:layout_width = "70dp"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/registerwork_Subject"
+		android:layout_alignLeft = "@id/registerwork_Subject"
+		android:layout_marginTop = "20dp"
+		android:gravity = "center"
+		android:text = "일 종류"
+		android:textSize = "18dp" />
+
+	<!--	Category Radio Group 1-->
+	<RadioGroup
+		android:id = "@+id/registerwork_Group_Radio1"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignTop = "@id/registerwork_Text_Category"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/registerwork_Text_Category"
+		android:orientation = "horizontal" >
+
+		<!--	Radio Deliver Button-->
+		<RadioButton
+			android:id = "@+id/registerwork_Radio_Deliver"
+			android:layout_width = "100dp"
+			android:layout_height = "30dp"
+			android:paddingLeft = "10dp"
+			android:text = "배달"
+			android:textSize = "18dp" />
+
+		<!--	Radio Food Button-->
+		<RadioButton
+			android:id = "@+id/registerwork_Radio_Food"
+			android:layout_width = "100dp"
+			android:layout_height = "30dp"
+			android:layout_marginLeft = "30dp"
+			android:paddingLeft = "10dp"
+			android:text = "음식"
+			android:textSize = "18dp" />
+	</RadioGroup >
+
+	<!--	Category Radio Group 2-->
+	<RadioGroup
+		android:id = "@+id/registerwork_Group_Radio2"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/registerwork_Group_Radio1"
+		android:layout_marginLeft = "30dp"
+		android:layout_toRightOf = "@id/registerwork_Text_Category"
+		android:orientation = "horizontal" >
+
+		<!--	Radio Deliver Button-->
+		<RadioButton
+			android:id = "@+id/registerwork_Radio_Home"
+			android:layout_width = "100dp"
+			android:layout_height = "30dp"
+			android:paddingLeft = "10dp"
+			android:text = "집안일"
+			android:textSize = "18dp" />
+
+		<!--	Radio Food Button-->
+		<RadioButton
+			android:id = "@+id/registerwork_Radio_ETC"
+			android:layout_width = "100dp"
+			android:layout_height = "30dp"
+			android:layout_marginLeft = "30dp"
+			android:paddingLeft = "10dp"
+			android:text = "기타"
+			android:textSize = "18dp" />
+	</RadioGroup >
+
+	<!--	Name-->
+	<TextView
+		android:id = "@+id/registerwork_Text_Name"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/registerwork_Text_Category"
+		android:layout_alignLeft = "@id/registerwork_Text_Category"
+		android:layout_marginTop = "50dp"
+		android:gravity = "center"
+		android:text = "제목"
+		android:textSize = "18dp" />
+
+	<!--	Value-->
+	<TextView
+		android:id = "@+id/registerwork_Text_Value"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/registerwork_Text_Name"
+		android:layout_alignLeft = "@id/registerwork_Subject"
+		android:layout_marginTop = "50dp"
+		android:gravity = "center"
+		android:text = "금액"
+		android:textSize = "18dp" />
+
+	<!--	Content-->
+	<TextView
+		android:id = "@+id/registerwork_Text_Content"
+		android:layout_width = "70dp"
+		android:layout_height = "22dp"
+		android:layout_below = "@id/registerwork_Text_Value"
+		android:layout_alignLeft = "@id/registerwork_Subject"
+		android:layout_marginTop = "50dp"
+		android:gravity = "center"
+		android:text = "내용"
+		android:textSize = "18dp" />
+
+	<!--	Edit Name-->
+	<EditText
+		android:id = "@+id/registerwork_Edit_Name"
+		android:layout_width = "260dp"
+		android:layout_height = "50dp"
+		android:layout_below = "@id/registerwork_Group_Radio2"
+		android:layout_alignLeft = "@id/registerwork_Group_Radio1"
+		android:layout_marginTop = "10dp"
+		android:gravity = "top"
+		android:inputType = "textNoSuggestions"
+		android:textSize = "18dp" />
+
+	<!--	Edit Value-->
+	<EditText
+		android:id = "@+id/registerwork_Edit_Value"
+		android:layout_width = "260dp"
+		android:layout_height = "50dp"
+		android:layout_below = "@id/registerwork_Edit_Name"
+		android:layout_alignLeft = "@id/registerwork_Group_Radio1"
+		android:layout_marginTop = "21dp"
+		android:gravity = "top"
+		android:inputType = "numberDecimal"
+		android:textSize = "18dp" />
+
+	<!--	Edit Content-->
+	<EditText
+		android:id = "@+id/registerwork_Edit_Content"
+		android:layout_width = "260dp"
+		android:layout_height = "180dp"
+		android:layout_below = "@id/registerwork_Edit_Value"
+		android:layout_alignLeft = "@id/registerwork_Group_Radio1"
+		android:layout_marginTop = "22dp"
+		android:gravity = "top"
+		android:inputType = "textNoSuggestions"
+		android:textSize = "18dp" />
+
+	<!--	Register Button-->
+	<Button
+		android:id = "@+id/registerwork_Button_Register"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignParentRight = "true"
+		android:layout_alignParentBottom = "true"
+		android:layout_marginRight = "25dp"
+		android:layout_marginBottom = "25dp"
+		android:background = "@mipmap/icon_check_round" />
+
+</RelativeLayout >

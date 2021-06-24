@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Box-->
+	<TextView
+		android:id = "@+id/messenger_Box"
+		android:layout_width = "360dp"
+		android:layout_height = "100dp"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:background = "@drawable/text_rectangle_grey" />
+
+	<!--	Back Button-->
+	<Button
+		android:id = "@+id/messenger_Button_Back"
+		android:layout_width = "40dp"
+		android:layout_height = "40dp"
+		android:layout_alignLeft = "@id/messenger_Box"
+		android:layout_alignTop = "@id/messenger_Box"
+		android:layout_marginLeft = "5dp"
+		android:layout_marginTop = "30dp"
+		android:background = "@drawable/ic_custom_back_button"
+		android:elevation = "2dp" />
+
+	<!--	Category Image-->
+	<ImageView
+		android:id = "@+id/messenger_Image_Category"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignTop = "@id/messenger_Box"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "20dp"
+		android:layout_toRightOf = "@id/messenger_Button_Back" />
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/messenger_Subject"
+		android:layout_width = "220dp"
+		android:layout_height = "60dp"
+		android:layout_alignTop = "@id/messenger_Box"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "20dp"
+		android:layout_toRightOf = "@id/messenger_Image_Category"
+		android:textSize = "20dp" />
+
+	<!--	ListView for Work List-->
+	<ListView
+		android:id = "@+id/messenger_ListView"
+		android:layout_width = "360dp"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@id/messenger_Box"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "10dp"
+		android:clipToPadding = "false"
+		android:paddingBottom = "70dp" />
+
+	<!--	Input Text-->
+	<EditText
+		android:id = "@+id/messenger_EditText"
+		android:layout_width = "360dp"
+		android:layout_height = "50dp"
+		android:layout_alignParentBottom = "true"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "12dp"
+		android:layout_marginBottom = "20dp"
+		android:background = "@drawable/text_rectangle_grey"
+		android:gravity = "center_vertical"
+		android:inputType = "textNoSuggestions"
+		android:paddingLeft = "20dp"
+		android:textSize = "20dp" />
+
+	<!--	Send Button-->
+	<Button
+		android:id = "@+id/messenger_Button_Send"
+		android:layout_width = "40dp"
+		android:layout_height = "40dp"
+		android:layout_alignTop = "@id/messenger_EditText"
+		android:layout_alignRight = "@id/messenger_EditText"
+		android:layout_marginTop = "5dp"
+		android:layout_marginRight = "5dp"
+		android:background = "@mipmap/icon_send" />
+
+	<!--	Camera Button-->
+	<Button
+		android:id = "@+id/messenger_Button_Camera"
+		android:layout_width = "40dp"
+		android:layout_height = "40dp"
+		android:layout_alignTop = "@id/messenger_EditText"
+		android:layout_marginTop = "5dp"
+		android:layout_marginRight = "5dp"
+		android:layout_toLeftOf = "@id/messenger_Button_Gallery"
+		android:background = "@mipmap/icon_camera"
+		android:elevation = "2dp" />
+
+	<!--	Gallery Button-->
+	<Button
+		android:id = "@+id/messenger_Button_Gallery"
+		android:layout_width = "40dp"
+		android:layout_height = "40dp"
+		android:layout_alignTop = "@id/messenger_EditText"
+		android:layout_marginTop = "5dp"
+		android:layout_marginRight = "5dp"
+		android:layout_toLeftOf = "@id/messenger_Button_Send"
+		android:background = "@mipmap/icon_photo"
+		android:elevation = "2dp" />
+
+	<!--	Pay Button-->
+	<Button
+		android:id = "@+id/messenger_Button_Pay"
+		android:layout_width = "120dp"
+		android:layout_height = "60dp"
+		android:layout_above = "@id/messenger_EditText"
+		android:layout_centerHorizontal = "true"
+		android:background = "#AAF"
+		android:enabled = "false"
+		android:text = "결제"
+		android:textSize = "28dp"
+		android:visibility = "invisible" />
+
+</RelativeLayout >

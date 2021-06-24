@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent" >
+
+	<!--	Subject-->
+	<TextView
+		android:id = "@+id/workinfo_Subject"
+		android:layout_width = "360dp"
+		android:layout_height = "120dp"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:background = "@drawable/text_rectangle_grey"
+		android:gravity = "center"
+		android:text = "일 정보"
+		android:textSize = "60dp" />
+
+	<!--	Back Button-->
+	<Button
+		android:id = "@+id/workInfo_Button_Back"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignLeft = "@id/workinfo_Subject"
+		android:layout_alignTop = "@id/workinfo_Subject"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "30dp"
+		android:background = "@drawable/ic_custom_back_button" />
+
+	<!--	Info Box-->
+	<TextView
+		android:id = "@+id/workinfo_Box"
+		android:layout_width = "360dp"
+		android:layout_height = "500dp"
+		android:layout_below = "@id/workinfo_Subject"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "30dp"
+		android:background = "@drawable/text_rectangle_grey" />
+
+	<!--	Work Image-->
+	<ImageView
+		android:id = "@+id/workinfo_Image"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignLeft = "@id/workinfo_Box"
+		android:layout_alignTop = "@id/workinfo_Box"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp" />
+
+	<!--	Distance-->
+	<TextView
+		android:id = "@+id/workinfo_Distance"
+		android:layout_width = "wrap_content"
+		android:layout_height = "30dp"
+		android:layout_alignTop = "@id/workinfo_Box"
+		android:layout_alignRight = "@id/workinfo_Box"
+		android:layout_marginTop = "10dp"
+		android:layout_marginRight = "10dp"
+		android:gravity = "right"
+		android:textSize = "20dp" />
+
+	<!--	Value-->
+	<TextView
+		android:id = "@+id/workinfo_Value"
+		android:layout_width = "wrap_content"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/workinfo_Distance"
+		android:layout_alignRight = "@id/workinfo_Box"
+		android:layout_marginTop = "10dp"
+		android:layout_marginRight = "10dp"
+		android:gravity = "right"
+		android:textSize = "20dp" />
+
+	<!--	Work Name-->
+	<TextView
+		android:id = "@+id/workinfo_WorkName"
+		android:layout_width = "200dp"
+		android:layout_height = "60dp"
+		android:layout_alignTop = "@id/workinfo_Image"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/workinfo_Image"
+		android:gravity = "center"
+		android:textSize = "20dp" />
+
+	<!--	Work Content-->
+	<TextView
+		android:id = "@+id/workinfo_WorkContent"
+		android:layout_width = "200dp"
+		android:layout_height = "200dp"
+		android:layout_below = "@id/workinfo_WorkName"
+		android:layout_alignLeft = "@id/workinfo_WorkName"
+		android:layout_marginTop = "50dp"
+		android:textSize = "20dp" />
+
+	<!--	Apply Button-->
+	<Button
+		android:id = "@+id/workinfo_Button_Apply"
+		android:layout_width = "200dp"
+		android:layout_height = "100dp"
+		android:layout_alignBottom = "@id/workinfo_Box"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginBottom = "30dp"
+		android:background = "#AAF"
+		android:text = "신청"
+		android:textSize = "40dp" />
+
+	<!--	Messenger Button-->
+	<Button
+		android:id = "@+id/workinfo_Button_Messenger"
+		android:layout_width = "200dp"
+		android:layout_height = "100dp"
+		android:layout_alignBottom = "@id/workinfo_Box"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginBottom = "30dp"
+		android:background = "@mipmap/icon_messenger"
+		android:enabled = "false"
+		android:visibility = "invisible" />
+
+</RelativeLayout >

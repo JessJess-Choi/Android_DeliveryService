@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "300dp"
+	android:layout_height = "180dp" >
+
+	<!--	User Image-->
+	<ImageView
+		android:id = "@+id/custom_Image"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginTop = "10dp" />
+
+	<!--	User Name-->
+	<TextView
+		android:id = "@+id/custom_Name"
+		android:layout_width = "120dp"
+		android:layout_height = "60dp"
+		android:layout_alignTop = "@id/custom_Image"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/custom_Image"
+		android:text = "AAA"
+		android:textSize = "30dp" />
+
+	<!--	Distance-->
+	<TextView
+		android:id = "@+id/custom_Distance"
+		android:layout_width = "60dp"
+		android:layout_height = "60dp"
+		android:layout_alignTop = "@id/custom_Image"
+		android:layout_marginLeft = "20dp"
+		android:layout_toRightOf = "@id/custom_Name"
+		android:gravity = "right" />
+
+	<!--	Context-->
+	<TextView
+		android:id = "@+id/custom_Content"
+		android:layout_width = "wrap_content"
+		android:layout_height = "30dp"
+		android:layout_below = "@id/custom_Image"
+		android:layout_centerHorizontal = "true"
+		android:layout_marginTop = "10dp"
+		android:textSize = "18dp" />
+
+	<Button
+		android:id = "@+id/custom_Button_OK"
+		android:layout_width = "120dp"
+		android:layout_height = "50dp"
+		android:layout_alignParentBottom = "true"
+		android:layout_marginLeft = "20dp"
+		android:layout_marginBottom = "10dp"
+		android:text = "예"
+		android:textSize = "20dp" />
+
+	<Button
+		android:id = "@+id/custom_Button_NO"
+		android:layout_width = "120dp"
+		android:layout_height = "50dp"
+		android:layout_alignParentRight = "true"
+		android:layout_alignParentBottom = "true"
+		android:layout_marginRight = "20dp"
+		android:layout_marginBottom = "10dp"
+		android:text = "아니오"
+		android:textSize = "20dp" />
+
+</RelativeLayout >
